@@ -1,0 +1,81 @@
+// Variables
+// steelblue #4682b4 and lightsteelblue
+$fontFamily: "Poppins", sans-serif;
+$titleFontFamily: "Poppins", sans-serif;
+$baseFontSize: 14px;
+$bodyBGColor: #fafaf7;
+$baseFontColor: #435a6b;
+$darkFontColor: #333;
+
+// $titleBackground: #395579; // - old #d8cdae;
+$linkColorHover: #e94a4a;
+$linkColor: #c52222;
+$buttonBackGroundHover: #47a165;
+$buttonBackGround: #395579; // - old #708090;
+
+$desktopMenuColor: #fff;
+$desktopMenuHover: #ffa6a5;
+$desktopMenuDropDownBG: #ce3131;
+$desktopMenuDropDownText: #fff;
+$desktopMenuDropDownHover: #ffa6a5;
+
+$mobileMenuBg: rgba(0, 0, 0, 0.8);
+$mobileMenuColor: #fff;
+$mobileMenuHover: #fff;
+$mobileMenuDropDownBG: "";
+$mobileMenuDropDownText: "";
+$mobileMenuDropDownHover: "";
+
+$regPad: 10px;
+$medPad: 20px;
+$radius: 5px;
+$titleWeight: 400;
+
+// Mixin
+@mixin globalButton() {
+  background: $buttonBackGround;
+  cursor: pointer;
+  color: $bodyBGColor;
+  border: 0;
+  padding: 14px 30px;
+  line-height: 100%;
+  margin-right: 2px;
+  display: inline-block;
+  font-weight: 400;
+  @include border-radius(3px);
+  @include transition(all 0.3s);
+}
+
+@mixin globalButtonHover() {
+  background: $buttonBackGroundHover;
+}
+
+%custom-button {
+  background: $buttonBackGround;
+  color: $bodyBGColor;
+  border: 0;
+  padding: 14px 30px;
+  line-height: 100%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.2em;
+  @include border-radius(3px);
+  @include transition(all 0.3s);
+
+  a {
+    color: $bodyBGColor;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:hover,
+  &.ui-state-active {
+    background: $buttonBackGroundHover;
+  }
+
+  @media (min-width: 920px) {
+    font-size: 1.4em;
+  }
+}

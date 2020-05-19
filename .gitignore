@@ -1,3 +1,5 @@
 **/.vscode
 **/.ddev
 **/db
+**/sites/default/files/php/twig
+*/sites/default/settings.php

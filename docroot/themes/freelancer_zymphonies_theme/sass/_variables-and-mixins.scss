@@ -8,10 +8,12 @@ $baseFontColor: #435a6b;
 $darkFontColor: #333;
 
 // $titleBackground: #395579; // - old #d8cdae;
-$linkColorHover: #e94a4a;
-$linkColor: #c52222;
-$buttonBackGroundHover: #47a165;
-$buttonBackGround: #395579; // - old #708090;
+$linkColor: rgba(57, 85, 121, 1); //#395579;
+$linkColorHover: rgba(57, 85, 121, 0.8);
+$linkColorHoverLight: rgba(57, 85, 121, 0.6);
+$linkColorBackgroundFaint: rgba(57, 85, 121, 0.1);
+$buttonBackGround: #47a165;
+$buttonBackGroundHover: #51b773;
 
 $desktopMenuColor: #fff;
 $desktopMenuHover: #ffa6a5;

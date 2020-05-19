@@ -141,20 +141,12 @@
 
 // Node Tour type page styles
 .page-node-type-tour {
-  .field.field--name-field-main-image {
-    margin-left: -3%;
-    margin-right: -3%;
-    img {
-      width: 100%;
-    }
-  }
-
   .field--name-body {
     @extend %large-body;
   }
 
   .field.field--name-field-itinerary {
-    background: #fff8e4;
+    background: $linkColorBackgroundFaint;
     width: 100%;
     margin: 0 auto;
 
@@ -165,7 +157,7 @@
 
   .paragraph--type--itinerary {
     .field--name-field-itinerary-title {
-      background: $buttonBackGroundHover;
+      background: $linkColorHover;
       padding: $regPad;
       color: $bodyBGColor;
       font-size: 1.2em;

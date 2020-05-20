@@ -2,10 +2,99 @@
 @import "variables-and-mixins";
 
 .node__content {
+  .field--name-field-difficulty.field--label-above .field__label {
+    position: absolute;
+    top: 67px;
+    font-weight: 400;
+    // background: $linkColorHoverLight;
+    background-image: linear-gradient(
+      to left,
+      transparent,
+      $linkColorHoverLight,
+      transparent
+    );
+    padding: 0 81px;
+    color: $bodyBGColor;
+    border: 1px solid transparent;
+  }
+
+  .field--difficulty--wrapper {
+    position: absolute;
+    top: 90px;
+    width: 30%;
+    margin-top: 1px;
+    border: 1px dotted $linkColorHoverLight;
+
+    @media (min-width: 920px) {
+      width: 20%;
+    }
+
+    .field--name-field-difficulty {
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .value__1 {
+      width: 20%;
+      background-image: linear-gradient(to left, rgb(255, 255, 0), green);
+    }
+
+    .value__2 {
+      width: 40%;
+      background-image: linear-gradient(to left, #f0b906, #b3ff00, green);
+    }
+
+    .value__3 {
+      width: 60%;
+      background-image: linear-gradient(
+        to left,
+        #f06d06,
+        #f0b906,
+        #b3ff00,
+        green
+      );
+    }
+
+    .value__4 {
+      width: 80%;
+      background-image: linear-gradient(
+        to left,
+        #eb3802,
+        #f06d06,
+        #f0b906,
+        #b3ff00,
+        green
+      );
+    }
+
+    .value__5 {
+      width: 100%;
+      background-image: linear-gradient(
+        to left,
+        #b30000,
+        #eb3802,
+        #f06d06,
+        #f0b906,
+        #b3ff00,
+        green
+      );
+    }
+  }
+
+  .field.field--name-field-main-image {
+    margin-left: -3%;
+    margin-right: -3%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
   .field--name-field-symbol {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -30px;
+    margin-top: -50px;
 
     .vocabulary-tour-icons {
       // hide until we have more content for activity lists
@@ -16,7 +105,7 @@
     .field__item {
       justify-content: space-between;
       width: 15vw;
-      margin: 20px auto;
+      margin: 0 auto 10px auto;
 
       .field--name-name {
         text-align: center;
@@ -27,12 +116,10 @@
     img {
       margin: 0 auto;
       display: block;
-      outline: 8px;
-      outline-color: #bcc7d2;
-      outline-offset: 3px;
-      outline-style: solid;
-      width: 60px;
+      border: 2px solid $linkColorHoverLight;
+      width: 70px;
       height: auto;
+      border-radius: 3px;
     }
   }
 }

@@ -6,12 +6,23 @@
     position: absolute;
     top: 67px;
     font-weight: 400;
+    // background: $linkColorHoverLight;
+    background-image: linear-gradient(
+      to left,
+      transparent,
+      $linkColorHoverLight,
+      transparent
+    );
+    padding: 0 81px;
+    color: $bodyBGColor;
+    border: 1px solid transparent;
   }
 
   .field--difficulty--wrapper {
     position: absolute;
     top: 90px;
     width: 30%;
+    margin-top: 1px;
     border: 1px dotted $linkColorHoverLight;
 
     @media (min-width: 920px) {

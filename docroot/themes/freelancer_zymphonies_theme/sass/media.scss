@@ -1,6 +1,7 @@
 @import "compass/CSS3";
 @import "variables-and-mixins";
 
+//  node tour content styling
 .node__content {
   .field--name-field-difficulty.field--label-above .field__label {
     position: absolute;
@@ -123,6 +124,27 @@
     }
   }
 }
+
+//  webform styles
+.webform-submission-form {
+  .js-form-item.form-item label {
+    display: block;
+  }
+  #edit-start-date,
+  #edit-end-date,
+  #edit-additional-information,
+  #edit-phone,
+  #edit-email,
+  #edit-name-first,
+  #edit-name-last {
+    background-color: white !important;
+  }
+  .js-form-item-start-date input,
+  .js-form-item-end-date input {
+    min-width: 180px;
+  }
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 570px;

@@ -1,5 +1,6 @@
 **/.vscode
 **/.ddev
 **/db
+**/core/yarn.lock
 **/sites/default/files/php/twig
 */sites/default/settings.php

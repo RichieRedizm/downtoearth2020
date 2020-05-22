@@ -26,7 +26,7 @@
     margin-top: 1px;
     border: 1px dotted $linkColorHoverLight;
 
-    @media (min-width: 920px) {
+    @media (min-width: 980px) {
       width: 20%;
     }
 
@@ -105,7 +105,7 @@
     }
     .field__item {
       justify-content: space-between;
-      width: 15vw;
+      width: 10vw;
       margin: 0 auto 10px auto;
 
       .field--name-name {
@@ -120,7 +120,7 @@
       border: 2px solid $linkColorHoverLight;
       width: 70px;
       height: auto;
-      border-radius: 3px;
+      @include border-radius($radiusSmall);
     }
   }
 }
@@ -130,6 +130,26 @@
   .js-form-item.form-item label {
     display: block;
   }
+
+  #edit-intro-content {
+    background: $linkColorHoverLight;
+    color: white;
+    font-size: 1.2em;
+    padding: 20px;
+    margin: 2em 0;
+    @include border-radius($radiusLarge);
+  }
+  .form-required::after {
+    content: "";
+    display: inline-block;
+    background-image: url(/core/misc/icons/ee0000/required.svg);
+    background-repeat: no-repeat;
+    background-size: 6px 6px;
+    width: 6px;
+    height: 10px;
+    margin: 0 0.3em;
+  }
+
   #edit-start-date,
   #edit-end-date,
   #edit-additional-information,

@@ -30,7 +30,8 @@ $mobileMenuDropDownHover: "";
 
 $regPad: 10px;
 $medPad: 20px;
-$radius: 5px;
+$radiusSmall: 3px;
+$radiusLarge: 7px;
 $titleWeight: 400;
 
 // Mixin
@@ -44,7 +45,7 @@ $titleWeight: 400;
   margin-right: 2px;
   display: inline-block;
   font-weight: 400;
-  @include border-radius(3px);
+  @include border-radius($radiusSmall);
   @include transition(all 0.3s);
 }
 
@@ -61,7 +62,7 @@ $titleWeight: 400;
   text-align: center;
   margin: 0 auto;
   font-size: 1.2em;
-  @include border-radius(3px);
+  @include border-radius($radiusSmall);
   @include transition(all 0.3s);
 
   a {
@@ -77,7 +78,7 @@ $titleWeight: 400;
     background: $buttonBackGroundHover;
   }
 
-  @media (min-width: 920px) {
+  @media (min-width: 980px) {
     font-size: 1.4em;
   }
 }

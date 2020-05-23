@@ -139,12 +139,13 @@
   }
 }
 
-// Node Tour type page styles
+// Node type page styles
+.page-node-type-mini-tour,
 .page-node-type-tour {
   .field--name-body {
     @extend %large-body;
   }
-
+  .field--name-field-itinerary-footnote,
   .field.field--name-field-itinerary {
     width: 100%;
     margin: 0 auto;
@@ -165,6 +166,10 @@
       @media (min-width: 980px) {
         font-size: 1.4em;
       }
+    }
+    .field--name-field-itinerary-footnote {
+      padding: $regPad;
+      margin-bottom: 1%;
     }
     .field--name-field-itinerary-outline {
       background: $linkColorBackgroundFaint;

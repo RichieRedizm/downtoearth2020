@@ -158,7 +158,7 @@
   .paragraph--type--itinerary {
     .field--name-field-itinerary-title {
       background: $linkColorHover;
-      padding: $regPad;
+      padding: $regPad $medPad;
       color: $bodyBGColor;
       font-size: 1.2em;
       @include border-radius($radiusLarge $radiusLarge 0 0);

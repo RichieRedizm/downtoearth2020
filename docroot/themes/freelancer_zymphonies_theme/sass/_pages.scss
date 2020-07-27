@@ -140,6 +140,7 @@
 }
 
 // Node type page styles
+.taxonomy-term.vocabulary-tour-type,
 .page-node-type-mini-tour,
 .page-node-type-tour {
   .field--name-body {
@@ -164,7 +165,7 @@
       @include border-radius($radiusLarge $radiusLarge 0 0);
 
       @media (min-width: 980px) {
-        font-size: 1.4em;
+        font-size: 1.3em;
       }
     }
     .field--name-field-itinerary-footnote {
@@ -206,6 +207,7 @@
     padding: 2.2em 0 0;
     border: 0;
   }
+
   .field--name-field-enquiry-webform {
     width: 100%;
     margin: 1% auto;

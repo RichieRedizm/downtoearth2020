@@ -14,7 +14,6 @@
       $linkColorHoverLight,
       transparent
     );
-    padding: 0 81px;
     color: $bodyBGColor;
     border: 1px solid transparent;
   }
@@ -24,7 +23,7 @@
     top: 90px;
     width: 30%;
     margin-top: 1px;
-    border: 2px dotted $linkColorHoverLight;
+    // border: 2px dotted $linkColorHoverLight;
 
     @media (min-width: 980px) {
       width: 20%;

@@ -2,7 +2,7 @@
 // steelblue #4682b4 and lightsteelblue
 $fontFamily: "Poppins", sans-serif;
 $titleFontFamily: "Poppins", sans-serif;
-$baseFontSize: 14px;
+$baseFontSize: 16px;
 $bodyBGColor: #fafaf7;
 $baseFontColor: #435a6b;
 $darkFontColor: #333;
@@ -79,6 +79,6 @@ $titleWeight: 400;
   }
 
   @media (min-width: 980px) {
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
 }

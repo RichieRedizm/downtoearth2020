@@ -140,6 +140,7 @@
 }
 
 // Node type page styles
+.taxonomy-term.vocabulary-tour-type,
 .page-node-type-mini-tour,
 .page-node-type-tour {
   .field--name-body {
@@ -263,9 +264,22 @@
 }
 .page-node-type-mini-tour,
 .node--type-mini-tour {
+  .field--name-field-difficulty.field--label-above .field__label,
+  .field--difficulty--wrapper {
+    position: relative;
+  }
   .flag-mini-breaks-flags a {
     @extend %custom-button-regular;
     margin-bottom: 3%;
   }
 }
-// .taxonomy-term.vocabulary-tour-type
+.node--type-mini-tour {
+  .field.field--name-field-main-image {
+    margin-left: 0;
+    float: left;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

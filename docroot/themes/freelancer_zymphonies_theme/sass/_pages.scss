@@ -266,16 +266,19 @@
 .node--type-mini-tour {
   .field--name-field-difficulty.field--label-above .field__label,
   .field--difficulty--wrapper {
-    position: relative;
+    position: relative !important;
+    top: 0 !important;
   }
   .flag-mini-breaks-flags a {
     @extend %custom-button-regular;
     margin-bottom: 3%;
+    float: right;
   }
 }
 .node--type-mini-tour {
   .field.field--name-field-main-image {
-    margin-left: 0;
+    margin-left: 0 !important;
+    margin-right: 3% !important;
     float: left;
     img {
       width: 100%;

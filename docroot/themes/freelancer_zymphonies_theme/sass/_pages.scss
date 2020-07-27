@@ -187,7 +187,9 @@
       }
     }
   }
-
+  .flag-mini-breaks-flags.action-flag {
+    @extend %custom-button;
+  }
   .ui-accordion .ui-accordion-header {
     @extend %custom-button;
     width: 100%;

@@ -140,7 +140,6 @@
 }
 
 // Node type page styles
-.taxonomy-term.vocabulary-tour-type,
 .page-node-type-mini-tour,
 .page-node-type-tour {
   .field--name-body {
@@ -266,5 +265,7 @@
 .node--type-mini-tour {
   .flag-mini-breaks-flags a {
     @extend %custom-button-regular;
+    margin-bottom: 3%;
   }
 }
+// .taxonomy-term.vocabulary-tour-type

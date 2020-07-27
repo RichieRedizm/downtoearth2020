@@ -188,8 +188,8 @@
       }
     }
   }
-  .flag-mini-breaks-flags.action-flag {
-    @extend %custom-button;
+  .flag-mini-breaks-flags {
+    @extend %custom-button-regular;
   }
   .ui-accordion .ui-accordion-header {
     @extend %custom-button;

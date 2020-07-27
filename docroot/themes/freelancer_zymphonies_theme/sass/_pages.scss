@@ -219,6 +219,20 @@
       width: 94%;
     }
   }
+  .form-type-date.js-form-item-start-date.form-item-start-date,
+  .form-type-date.js-form-item-end-date.form-item-end-date,
+  .form-type-number.js-form-item-people.form-item-people,
+  .form-type-select.js-form-item-flexible-dates.form-item-flexible-dates {
+    float: left;
+    margin-right: 3em;
+  }
+  .form-type-select.js-form-item-flexible-dates.form-item-flexible-dates {
+    clear: both;
+  }
+  .js-form-item-additional-information.form-item-additional-information {
+    display: inline-block;
+  }
+
   .js-form-item-flexible-dates.form-item-flexible-dates {
     @media (max-width: 980px) {
       display: block;

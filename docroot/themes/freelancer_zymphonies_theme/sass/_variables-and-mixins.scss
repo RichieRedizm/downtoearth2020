@@ -82,3 +82,34 @@ $titleWeight: 400;
     font-size: 1.3em;
   }
 }
+
+%custom-button-regular {
+  width: fit-content;
+  background: $buttonBackGround;
+  color: $bodyBGColor;
+  border: 0;
+  padding: 14px 30px;
+  line-height: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 400;
+  @include border-radius($radiusSmall);
+  @include transition(all 0.3s);
+
+  a {
+    color: $bodyBGColor;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:hover,
+  &.ui-state-active {
+    background: $buttonBackGroundHover;
+  }
+
+  @media (min-width: 980px) {
+    font-size: 1.3em;
+  }
+}

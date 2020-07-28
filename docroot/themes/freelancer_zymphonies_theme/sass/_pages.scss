@@ -275,10 +275,14 @@
     border-bottom: 1px solid $linkColorBackgroundFaint;
     margin-bottom: 3%;
   }
-  .field--name-field-difficulty.field--label-above .field__label,
-  .field--difficulty--wrapper {
-    position: relative !important;
-    top: 0 !important;
+  .field--name-field-difficulty {
+    margin: 1% 0;
+
+    .field__label,
+    .field--difficulty--wrapper {
+      position: relative !important;
+      top: 0 !important;
+    }
   }
   .flag-mini-breaks-flags a {
     @extend %custom-button-regular;

@@ -277,27 +277,34 @@
       transparent,
       $linkColorBackgroundFaint
     );
-    padding: 1%;
+    padding: 1% 1% 0;
     border-radius: 4px;
-    border-bottom: 1px solid $linkColorBackgroundFaint;
-    margin-bottom: 3%;
-  }
-  .field--name-field-difficulty {
-    margin: 1% 0;
+    border: 1px solid $linkColorBackgroundFaint;
+    margin-bottom: 1%;
 
-    .field__label,
-    .field--difficulty--wrapper {
-      position: relative !important;
-      top: 0 !important;
+    ol,
+    ul {
+      padding-left: 1%;
+      margin-bottom: 1%;
     }
-  }
-  .field--name-field-main-image {
-    margin-left: 0 !important;
-    margin-right: 3% !important;
-    float: left;
-    img {
-      width: 100%;
-      height: auto;
+
+    .field--name-field-difficulty {
+      margin: 1% 0;
+
+      .field__label,
+      .field--difficulty--wrapper {
+        position: relative !important;
+        top: 0 !important;
+      }
+    }
+    .field--name-field-main-image {
+      margin-left: 0 !important;
+      margin-right: 3% !important;
+      float: left;
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
   }
 }

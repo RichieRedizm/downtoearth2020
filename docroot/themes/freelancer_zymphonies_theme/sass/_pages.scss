@@ -264,6 +264,17 @@
 }
 .page-node-type-mini-tour,
 .node--type-mini-tour {
+  .node--view-mode-teaser {
+    background-image: linear-gradient(
+      to bottom,
+      transparent,
+      $linkColorBackgroundFaint
+    );
+    padding: 1%;
+    border-radius: 4px;
+    border-bottom: 1px solid $linkColorBackgroundFaint;
+    margin-bottom: 3%;
+  }
   .field--name-field-difficulty.field--label-above .field__label,
   .field--difficulty--wrapper {
     position: relative !important;

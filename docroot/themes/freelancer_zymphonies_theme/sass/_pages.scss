@@ -264,7 +264,14 @@
 }
 .page-node-type-mini-tour,
 .node--type-mini-tour {
-  .node--view-mode-teaser {
+  .flag-mini-breaks-flags a {
+    @extend %custom-button-regular;
+    margin-bottom: 3%;
+    float: right;
+  }
+}
+.node--type-mini-tour {
+  &.node--view-mode-teaser {
     background-image: linear-gradient(
       to bottom,
       transparent,
@@ -284,14 +291,7 @@
       top: 0 !important;
     }
   }
-  .flag-mini-breaks-flags a {
-    @extend %custom-button-regular;
-    margin-bottom: 3%;
-    float: right;
-  }
-}
-.node--type-mini-tour {
-  .field.field--name-field-main-image {
+  .field--name-field-main-image {
     margin-left: 0 !important;
     margin-right: 3% !important;
     float: left;

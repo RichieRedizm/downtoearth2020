@@ -270,16 +270,21 @@
 }
 .node--type-mini-tour {
   &.node--view-mode-teaser {
+    position: relative;
     background-image: linear-gradient(
       to bottom,
       $colorBackgroundFaint,
       $colorBackgroundLight
     );
     padding: 1% 1% 0;
-    border-radius: 4px;
-    // border: 1px solid $linkColorBackgroundFaint;
+    border-radius: $radiusSmall;
+    border: 1px solid $colorBackgroundLight;
     margin-bottom: 1%;
 
+    h2,
+    .h2 {
+      max-width: 80%;
+    }
     ol,
     ul {
       padding-bottom: 1%;

@@ -266,28 +266,28 @@
 .node--type-mini-tour {
   .flag-mini-breaks-flags a {
     @extend %custom-button-regular;
-    margin-bottom: 3%;
-    float: right;
   }
 }
 .node--type-mini-tour {
   &.node--view-mode-teaser {
     background-image: linear-gradient(
       to bottom,
-      transparent,
-      $linkColorBackgroundFaint
+      $colorBackgroundFaint,
+      $colorBackgroundLight
     );
     padding: 1% 1% 0;
     border-radius: 4px;
-    border: 1px solid $linkColorBackgroundFaint;
+    // border: 1px solid $linkColorBackgroundFaint;
     margin-bottom: 1%;
 
     ol,
     ul {
-      padding-left: 1%;
-      margin-bottom: 1%;
+      padding-bottom: 1%;
     }
-
+    .flag-mini-breaks-flags a {
+      margin-bottom: 3%;
+      float: right;
+    }
     .field--name-field-difficulty {
       margin: 1% 0;
 
@@ -305,6 +305,14 @@
         width: 100%;
         height: auto;
       }
+    }
+    .field--name-field-trip-length- {
+      right: 1%;
+      font-size: 1.3em;
+      line-height: 120%;
+      font-weight: 500;
+      position: absolute;
+      top: 1em;
     }
   }
 }

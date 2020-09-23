@@ -321,3 +321,14 @@
     }
   }
 }
+
+.paragraph--type--image-content {
+  .field--name-field-image:nth-of-type(odd) {
+    float: right;
+    margin-left: 3%;
+  }
+  .field--name-field-image:nth-of-type(even) {
+    float: left;
+    margin-right: 3%;
+  }
+}

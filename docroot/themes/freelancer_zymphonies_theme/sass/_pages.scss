@@ -323,11 +323,11 @@
 }
 
 .paragraph--type--image-content {
-  .field--name-field-image:nth-of-type(odd) {
+  &:nth-of-type(odd) .field--name-field-image {
     float: right;
     margin-left: 3%;
   }
-  .field--name-field-image:nth-of-type(even) {
+  &:nth-of-type(even) .field--name-field-image {
     float: left;
     margin-right: 3%;
   }

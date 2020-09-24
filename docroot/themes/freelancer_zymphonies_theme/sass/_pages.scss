@@ -322,7 +322,7 @@
   }
 }
 
-.field--name-field-image-content {
+.field--name-field-image-content .field__item {
   &:nth-of-type(odd) .field--name-field-image {
     float: right;
     margin-left: 3%;

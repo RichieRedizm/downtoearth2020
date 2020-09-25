@@ -1,3 +1,29 @@
+.top-nav,
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.header {
+  top: 123px;
+}
+
+#page-title {
+  position: fixed;
+  @extend %responsive-padding;
+  h1 {
+    margin-top: 150px;
+    color: #faf9f7;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+
 .top-message {
   text-align: center;
 }
@@ -142,7 +168,56 @@
 // Node type page styles
 .taxonomy-term.vocabulary-tour-type,
 .page-node-type-mini-tour,
-.page-node-type-tour {
+.page-node-type-tour,
+.page-node-type-page {
+  .node__content {
+    min-height: 80vh;
+  }
+  .main-content {
+    padding: 0;
+  }
+  .field.field--name-field-main-image {
+    @extend %main-static-image;
+  }
+  .field--name-field-difficulty {
+    // margin-top: 40%;
+  }
+  .field--name-field-image-content .field__item {
+    &:nth-of-type(odd) .field--name-field-image {
+      float: right;
+      margin-left: 3%;
+      margin-right: 0%;
+      margin-bottom: 2%;
+      @media (min-width: 768px) {
+        margin-right: 5%;
+      }
+    }
+    &:nth-of-type(even) .field--name-field-image {
+      float: left;
+      margin-right: 3%;
+      margin-left: 0%;
+      margin-bottom: 2%;
+      @media (min-width: 768px) {
+        margin-left: 3%;
+      }
+    }
+  }
+  .field.field--name-field-main-page-image {
+    @extend %main-static-image;
+  }
+  .field.field--name-body {
+    margin-top: 34%;
+  }
+  .field.field--name-body,
+  .field--name-field-image-content {
+    width: 100%;
+    background-color: #faf9f7;
+    @extend %responsive-padding;
+  }
+  .block {
+    margin-bottom: 0;
+  }
+
   .field--name-body {
     @extend %large-body;
   }
@@ -312,23 +387,12 @@
       }
     }
     .field--name-field-trip-length- {
-      right: 1%;
+      // right: 1%;
       font-size: 1.3em;
       line-height: 120%;
       font-weight: 500;
-      position: absolute;
-      top: 1em;
+      // position: absolute;
+      // top: 1em;
     }
-  }
-}
-
-.field--name-field-image-content .field__item {
-  &:nth-of-type(odd) .field--name-field-image {
-    float: right;
-    margin-left: 3%;
-  }
-  &:nth-of-type(even) .field--name-field-image {
-    float: left;
-    margin-right: 3%;
   }
 }

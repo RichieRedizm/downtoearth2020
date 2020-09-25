@@ -112,3 +112,24 @@ $titleWeight: 400;
     background: $buttonBackGroundHover;
   }
 }
+
+%responsive-padding {
+  padding: 30px;
+  @media (min-width: 980px) {
+    padding: 30px 20%;
+  }
+}
+
+%main-static-image {
+  background-color: transparent !important;
+  width: 100%;
+  position: fixed;
+  top: 208px;
+  z-index: -1;
+  padding: 0 !important;
+  picture,
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

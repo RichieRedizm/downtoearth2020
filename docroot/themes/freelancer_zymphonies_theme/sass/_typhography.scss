@@ -126,7 +126,11 @@ ul.links.inline {
 }
 
 %large-body {
-  font-size: 1.3em;
-  line-height: 1.6em;
+  font-size: 1.1em;
+  line-height: 1.4em;
   text-align: center;
+  @media (min-width: 980px) {
+    font-size: 1.3em;
+    line-height: 1.6em;
+  }
 }

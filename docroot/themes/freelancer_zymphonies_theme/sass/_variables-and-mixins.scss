@@ -114,22 +114,31 @@ $titleWeight: 400;
 }
 
 %responsive-padding {
+  width: 100%;
   padding: 30px;
   @media (min-width: 980px) {
-    padding: 30px 20%;
+    padding: 30px 10%;
   }
 }
 
 %main-static-image {
-  background-color: transparent !important;
   width: 100%;
   position: fixed;
-  top: 208px;
   z-index: -1;
   padding: 0 !important;
   picture,
   img {
     width: 100%;
     height: auto;
+  }
+}
+
+@mixin float-right-fixed($top) {
+  position: fixed;
+  top: $top;
+  right: 30px;
+  z-index: -1;
+  @media (min-width: 980px) {
+    right: 10%;
   }
 }

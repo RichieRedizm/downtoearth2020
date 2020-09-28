@@ -1,3 +1,33 @@
+.top-nav,
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.header {
+  top: 44px;
+}
+.toolbar-horizontal {
+  .header {
+    top: 123px;
+  }
+}
+#page-title {
+  position: fixed;
+  @extend %responsive-padding;
+  h1 {
+    margin-top: 150px;
+    color: #faf9f7;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+
 .top-message {
   text-align: center;
 }
@@ -140,9 +170,137 @@
 }
 
 // Node type page styles
-.taxonomy-term.vocabulary-tour-type,
 .page-node-type-mini-tour,
 .page-node-type-tour {
+  .field--name-field-difficulty {
+    @include float-right-fixed(190px);
+    text-align: right;
+  }
+  &.toolbar-horizontal {
+    .field--name-field-difficulty {
+      top: 270px;
+    }
+  }
+  .field--name-field-image {
+    background: $bodyBGColor;
+    @extend %responsive-padding;
+  }
+}
+.taxonomy-term.vocabulary-tour-type,
+.page-node-type-mini-tour,
+.page-node-type-tour,
+.page-node-type-page {
+  .node__content {
+    min-height: 80vh;
+  }
+  .main-content {
+    padding: 0;
+  }
+  .field--name-field-difficulty {
+    max-width: 20%;
+
+    @media (min-width: 980px) {
+      max-width: 15%;
+    }
+    @media (min-width: 1200px) {
+      max-width: 10%;
+    }
+  }
+
+  .field--name-field-symbol {
+    @include float-right-fixed(222px);
+    display: flex;
+
+    img {
+      margin: 0 auto;
+      display: block;
+      // border: 2px solid $linkColorHoverLight;
+      width: 70px;
+      height: auto;
+      @include border-radius($radiusSmall);
+    }
+  }
+
+  .toolbar-horizontal {
+    .field--name-field-symbol {
+      top: 304px;
+    }
+  }
+
+  .field--name-field-tour-type {
+    position: fixed;
+    @extend %responsive-padding;
+    top: 130px;
+    display: none;
+  }
+  &.toolbar-horizontal {
+    .field--name-field-tour-type {
+      top: 180px;
+    }
+  }
+  .field--name-field-main-page-image,
+  .field--name-field-main-image {
+    @extend %main-static-image;
+    top: 128px;
+  }
+  &.toolbar-horizontal {
+    .field--name-field-main-page-image,
+    .field--name-field-main-image {
+      top: 204px;
+    }
+  }
+  .field.field--name-body {
+    margin-top: 70%;
+    @media (min-width: 980px) {
+      margin-top: 50%;
+    }
+    @media (min-width: 1400px) {
+      margin-top: 40%;
+    }
+  }
+  &.toolbar-horizontal {
+    .field.field--name-body {
+      margin-top: 74%;
+      @media (min-width: 980px) {
+        margin-top: 54%;
+      }
+      @media (min-width: 1400px) {
+        margin-top: 44%;
+      }
+    }
+  }
+
+  .field--name-field-image-content .field__item {
+    &:nth-of-type(odd) .field--name-field-image {
+      float: right;
+      margin-left: 3%;
+      margin-right: 0%;
+      margin-bottom: 2%;
+      @media (min-width: 768px) {
+        margin-right: 5%;
+      }
+    }
+    &:nth-of-type(even) .field--name-field-image {
+      float: left;
+      margin-right: 3%;
+      margin-left: 0%;
+      margin-bottom: 2%;
+      @media (min-width: 768px) {
+        margin-left: 3%;
+      }
+    }
+  }
+  .field--type-text-long,
+  .field.field--name-body,
+  .field--name-field-image-content,
+  .field-group-accordion-wrapper {
+    background: $bodyBGColor;
+    @extend %responsive-padding;
+  }
+  .block {
+    margin-bottom: 0;
+  }
+  .field--name-description,
   .field--name-body {
     @extend %large-body;
   }
@@ -268,7 +426,22 @@
     @extend %custom-button-regular;
   }
 }
+.flag-mini-breaks-flags,
+.flag-mini-breaks-flags.flag-waiting .ajax-progress {
+  position: absolute;
+  right: 1%;
+}
+.path-taxonomy,
 .node--type-mini-tour {
+  #page-title {
+    position: relative;
+    h1 {
+      color: black;
+    }
+  }
+  .views-row {
+    @extend %responsive-padding;
+  }
   &.node--view-mode-teaser {
     position: relative;
     background-image: linear-gradient(
@@ -294,13 +467,22 @@
       float: right;
     }
     .field--name-field-difficulty {
-      margin: 1% 0;
-
-      .field__label,
-      .field--difficulty--wrapper {
-        position: relative !important;
-        top: 0 !important;
-      }
+      margin-bottom: 1%;
+      width: 15%;
+      float: right;
+      right: 2%;
+    }
+    .field--name-field-symbol {
+      display: flex;
+      float: right;
+      right: 2%;
+      clear: right;
+    }
+    .field__label {
+      text-indent: 0%;
+      margin-bottom: -31px;
+      padding: 4%;
+      text-align: right;
     }
     .field--name-field-main-image {
       margin-left: 0 !important;
@@ -319,16 +501,5 @@
       position: absolute;
       top: 1em;
     }
-  }
-}
-
-.field--name-field-image-content .field__item {
-  &:nth-of-type(odd) .field--name-field-image {
-    float: right;
-    margin-left: 3%;
-  }
-  &:nth-of-type(even) .field--name-field-image {
-    float: left;
-    margin-right: 3%;
   }
 }

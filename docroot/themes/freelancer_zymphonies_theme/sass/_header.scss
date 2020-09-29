@@ -29,6 +29,9 @@
   background: #000;
   @include box-shadow(inset 1px -1px 13px 3px rgba(24, 24, 22, 0.8));
 
+  .navbar-header {
+    max-width: 9%;
+  }
   .row {
     width: 100%;
     margin: 0;

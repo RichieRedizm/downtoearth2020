@@ -192,6 +192,7 @@
 .page-node-type-page {
   .node__content {
     min-height: 80vh;
+    padding-top: 70px;
   }
   .main-content {
     padding: 0;
@@ -208,7 +209,7 @@
   }
 
   .field--name-field-symbol {
-    @include float-right-fixed(222px);
+    @include float-right-fixed(302px);
     display: flex;
 
     img {
@@ -250,7 +251,7 @@
     }
   }
   .field.field--name-body {
-    margin-top: 70%;
+    margin-top: 60%;
     @media (min-width: 980px) {
       margin-top: 50%;
     }

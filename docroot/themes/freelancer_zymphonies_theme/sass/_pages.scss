@@ -445,15 +445,16 @@
   }
   &.node--view-mode-teaser {
     position: relative;
-    background-image: linear-gradient(
-      to bottom,
-      $colorBackgroundFaint,
-      $colorBackgroundLight
-    );
-    padding: 1% 1% 0;
+    // background-image: linear-gradient(
+    //   to bottom,
+    //   $colorBackgroundFaint,
+    //   $colorBackgroundLight
+    // );
+    background: $linkColorBackgroundFaint;
+    padding: 2%;
     border-radius: $radiusSmall;
-    border: 1px solid $colorBackgroundLight;
-    margin-bottom: 1%;
+    // border: 1px solid $colorBackgroundLight;
+    // margin-bottom: 1%;
 
     h2,
     .h2 {

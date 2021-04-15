@@ -209,7 +209,7 @@
   }
 
   .field--name-field-symbol {
-    @include float-right-fixed(302px);
+    @include float-right-fixed(230px);
     display: flex;
 
     img {
@@ -434,15 +434,44 @@
 }
 .path-taxonomy,
 .node--type-mini-tour {
+  .views-element-container > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .views-row {
+    flex: 0 32%;
+    margin: 20px auto;
+
+    @media (max-width: 1224px) {
+      flex: 0 48%;
+    }
+    @media (max-width: 980px) {
+      flex: 0 96%;
+    }
+    .node__links {
+      bottom: 0;
+      position: absolute;
+      ul {
+        padding-bottom: 0;
+      }
+    }
+  }
+  .main-content {
+    padding: 0;
+  }
+  a.feed-icon {
+    display: none;
+  }
   #page-title {
     position: relative;
     h1 {
       color: black;
     }
   }
-  .views-row {
-    @extend %responsive-padding;
-  }
+  // .views-row {
+  //   @extend %responsive-padding;
+  // }
   &.node--view-mode-teaser {
     position: relative;
     // background-image: linear-gradient(
@@ -451,15 +480,15 @@
     //   $colorBackgroundLight
     // );
     background: $linkColorBackgroundFaint;
-    padding: 2%;
+    padding: 1% 2% 18%;
     border-radius: $radiusSmall;
+    height: 100%;
     // border: 1px solid $colorBackgroundLight;
     // margin-bottom: 1%;
-
-    h2,
-    .h2 {
-      max-width: 80%;
-    }
+    // h2,
+    // .h2 {
+    //   max-width: 80%;
+    // }
     ol,
     ul {
       padding-bottom: 1%;
@@ -470,9 +499,9 @@
     }
     .field--name-field-difficulty {
       margin-bottom: 1%;
-      width: 15%;
-      float: right;
-      right: 2%;
+      width: 30%;
+      // float: right;
+      // right: 2%;
     }
     .field--name-field-symbol {
       display: flex;
@@ -484,24 +513,32 @@
       text-indent: 0%;
       margin-bottom: -31px;
       padding: 4%;
-      text-align: right;
+      // text-align: right;
+      display: none;
     }
     .field--name-field-main-image {
-      margin-left: 0 !important;
-      margin-right: 3% !important;
-      float: left;
+      // margin-left: 3% !important;
+      // margin-right: 0 !important;
+      // float: right;
+
+      // @media (min-width: 767px) {
+      //   margin-right: 0 !important;
+      //   margin-left: 0 !important;
+      //   float: none;
+      // }
+
       img {
         width: 100%;
         height: auto;
       }
     }
     .field--name-field-trip-length- {
-      right: 1%;
+      right: 2%;
       font-size: 1.3em;
       line-height: 120%;
       font-weight: 500;
       position: absolute;
-      top: 1em;
+      // top: 1em;
     }
   }
 }

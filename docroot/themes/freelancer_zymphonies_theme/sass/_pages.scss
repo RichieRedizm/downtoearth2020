@@ -442,14 +442,14 @@
     justify-content: space-between;
   }
   .views-row {
-    flex: 0 32%;
+    flex: 0 96%;
     margin: 20px auto;
 
-    @media (max-width: 1224px) {
+    @media (min-width: 980px) {
       flex: 0 48%;
     }
-    @media (max-width: 980px) {
-      flex: 0 96%;
+    @media (min-width: 1400px) {
+      flex: 0 30%;
     }
     .node__links {
       bottom: 0;

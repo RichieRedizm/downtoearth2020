@@ -102,9 +102,8 @@
 <!-- Start: Header -->
 <div class="header">
   <div class="container-">
-    <div class="row">
 
-      <div class="navbar-header col-md-3">
+      <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navigation">
           <i class="fas fa-bars"></i>
         </button>
@@ -114,7 +113,7 @@
       </div>
 
       {% if page.primary_menu or page.search %}
-        <div class="col-md-9">
+        <div class="navbar-header-primary-menu">
           {% if page.search %}
             {{ page.search }}
           {% endif %}
@@ -124,7 +123,6 @@
         </div>
       {% endif %}
 
-    </div>
   </div>
 </div>
 <!-- End: Region -->

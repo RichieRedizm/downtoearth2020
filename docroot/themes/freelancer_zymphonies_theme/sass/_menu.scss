@@ -21,9 +21,9 @@
 .navbar-toggle-close {
   position: absolute;
   right: 0;
-  padding: 18px;
-  font-size: 2em;
-  color: #f00;
+  margin: -25px 11px;
+  font-size: 1.6em;
+  color: white;
   cursor: pointer;
   z-index: 99;
 }
@@ -69,8 +69,13 @@ nav h2 {
       font-family: $titleFontFamily;
       color: $desktopMenuColor;
       line-height: 100%;
-      padding: 24px 20px;
-      font-size: 1.1em;
+      padding: 24px 15px;
+      font-size: 1em;
+
+      @media (min-width: 980px) {
+        padding: 24px 20px;
+        font-size: 1.1em;
+      }
 
       &:hover,
       &:focus,
@@ -79,7 +84,11 @@ nav h2 {
         background: none;
         color: $desktopMenuHover;
         line-height: 100%;
-        padding: 24px 20px;
+        padding: 24px 15px;
+
+        @media (min-width: 980px) {
+          padding: 24px 20px;
+        }
       }
 
       &.sub-arrow {
@@ -115,7 +124,8 @@ nav h2 {
 
   &.expand {
     left: 0;
-    right: 10%;
+    right: 40%;
+    padding-top: 30px;
   }
 }
 

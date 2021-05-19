@@ -6,13 +6,14 @@
 }
 
 .header {
-  top: 44px;
+  top: 0;
 }
 .toolbar-horizontal {
   .header {
-    top: 123px;
+    top: 79px;
   }
 }
+
 #page-title {
   position: fixed;
   @extend %responsive-padding;
@@ -242,12 +243,12 @@
   .field--name-field-main-page-image,
   .field--name-field-main-image {
     @extend %main-static-image;
-    top: 128px;
+    top: 90px;
   }
   &.toolbar-horizontal {
     .field--name-field-main-page-image,
     .field--name-field-main-image {
-      top: 204px;
+      top: 162px;
     }
   }
   .field.field--name-body {

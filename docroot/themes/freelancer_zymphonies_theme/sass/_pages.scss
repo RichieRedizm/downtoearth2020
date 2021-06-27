@@ -199,9 +199,18 @@
     padding: 0;
   }
 
-  // .highlighted {
-  //   display: none;
-  // }
+  .messages.messages--status {
+    position: fixed;
+    top: 370px;
+    display: none;
+    @extend %responsive-padding;
+  }
+
+  &.user-logged-in {
+    .messages.messages--status {
+      display: block;
+    }
+  }
 
   .field--name-field-difficulty {
     max-width: 20%;

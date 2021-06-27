@@ -200,17 +200,7 @@
   }
 
   .highlighted {
-    position: fixed;
-    top: 360px;
     display: none;
-
-    @extend %responsive-padding;
-  }
-
-  &.user-logged-in {
-    .highlighted {
-      display: block;
-    }
   }
 
   .field--name-field-difficulty {

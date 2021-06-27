@@ -200,18 +200,18 @@
   }
 
   .highlighted {
-    position: fixed;
-    top: 360px;
+    //   position: fixed;
+    //   top: 360px;
     display: none;
 
-    @extend %responsive-padding;
+    //   @extend %responsive-padding;
   }
 
-  &.user-logged-in {
-    .highlighted {
-      display: block;
-    }
-  }
+  // &.user-logged-in {
+  //   .highlighted {
+  //     display: block;
+  //   }
+  // }
 
   .field--name-field-difficulty {
     max-width: 20%;

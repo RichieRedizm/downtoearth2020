@@ -109,6 +109,10 @@
       height: 100%;
     }
   }
+  .field--name-description,
+  .field--name-body {
+    @extend %large-body;
+  }
 }
 
 // Contact page

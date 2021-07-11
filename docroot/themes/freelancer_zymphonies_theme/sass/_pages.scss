@@ -411,7 +411,7 @@
     }
     .field--name-field-itinerary-outline {
       background: $linkColorBackgroundFaint;
-      padding: $regPad;
+      padding: $medPad $regPad $regPad;
       margin-bottom: 1%;
       @include border-radius(0 0 $radiusLarge $radiusLarge);
 

@@ -109,8 +109,7 @@
       height: 100%;
     }
   }
-  .field--name-description,
-  .field--name-body {
+  .field--name-strapline {
     @extend %large-body;
   }
 }

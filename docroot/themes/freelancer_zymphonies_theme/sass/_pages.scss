@@ -87,13 +87,15 @@
 }
 
 // blogs
-.travel-stories {
+.path-travel-stories {
   .main-content {
     padding: 170px 30px;
     @media (min-width: 1200px) {
       padding: 200px 100px;
     }
   }
+}
+.travel-stories {
   .layout__region.layout__region--content {
     .field--name-field-main-page-image.field--type-image {
       float: left;

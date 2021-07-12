@@ -449,6 +449,7 @@
     padding: 2.2em 0 0;
     border: 0;
   }
+
   .field--name-field-enquiry-form-mini,
   .field--name-field-enquiry-webform {
     width: 100%;
@@ -459,6 +460,11 @@
 
     @media (min-width: 980px) {
       width: 94%;
+    }
+
+    #edit-choose-mini-breaks input {
+      float: left;
+      margin: 0 10px;
     }
   }
   .form-type-date.js-form-item-start-date.form-item-start-date,

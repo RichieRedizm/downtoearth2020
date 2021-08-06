@@ -8,7 +8,7 @@ dependencies:
   - drupal:content_translation
   - drupal:views
 
-# Information added by Drupal.org packaging script on 2021-05-26
-version: '8.9.16'
+# Information added by Drupal.org packaging script on 2021-07-21
+version: '8.9.17'
 project: 'drupal'
-datestamp: 1622058139
+datestamp: 1626883393

@@ -28,9 +28,13 @@
   padding: 0;
   text-align: left;
   background: #000;
-  height: 90px;
+  height: 75px;
   max-height: 90px;
   @include box-shadow(inset 1px -1px 13px 3px rgba(24, 24, 22, 0.8));
+
+  @media (min-width: 768px) {
+    height: 90px;
+  }
 
   .container- {
     display: block;
@@ -101,6 +105,15 @@
 
   &.logo {
     z-index: 9;
+    width: 20%;
+
+    @media (min-width: 500px) {
+      width: 16%;
+    }
+
+    @media (min-width: 768px) {
+      width: auto;
+    }
   }
 
   a {

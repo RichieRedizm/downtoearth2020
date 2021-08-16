@@ -144,6 +144,20 @@
 
   // Flexslider
   .flexslider {
+    .image-overlay {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+    }
+    background: black;
+    //override responsive image
+    img.img-responsive {
+      display: block;
+      width: 100%;
+    }
+
     .slider-caption {
       display: block;
       top: 30%;

@@ -20,9 +20,13 @@
   @extend %responsive-padding;
 
   h1 {
-    margin-top: 150px;
+    margin-top: 120px;
     text-shadow: 2px 1px 10px rgb(66, 63, 76);
     color: #faf9f7;
+
+    @media (min-width: 768px) {
+      margin-top: 150px;
+    }
   }
 
   &.user-logged-in {
@@ -296,12 +300,18 @@
   .field--name-field-main-page-image,
   .field--name-field-main-image {
     @extend %main-static-image;
-    top: 90px;
+    top: 74px;
+    @media (min-width: 768px) {
+      top: 90px;
+    }
   }
   &.user-logged-in {
     .field--name-field-main-page-image,
     .field--name-field-main-image {
-      top: 162px;
+      top: 132%;
+      @media (min-width: 768px) {
+        top: 162px;
+      }
     }
   }
   .field.field--name-body {
@@ -348,7 +358,7 @@
 
   .field--name-field-region {
     position: fixed;
-    top: 108px;
+    top: 84px;
     font-size: 2.4em;
     z-index: -1;
     margin-left: -12px;
@@ -356,6 +366,10 @@
     color: #faf9f7;
 
     @extend %responsive-padding;
+
+    @media (min-width: 768px) {
+      top: 108px;
+    }
   }
 
   &.user-logged-in {

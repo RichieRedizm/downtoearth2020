@@ -130,6 +130,9 @@
   input,
   textarea {
     max-width: 90%;
+    @media (min-width: 980px) {
+      max-width: 100%;
+    }
   }
 }
 

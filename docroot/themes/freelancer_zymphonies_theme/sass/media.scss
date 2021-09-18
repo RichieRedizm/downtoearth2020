@@ -87,6 +87,9 @@
 }
 //  webform styles
 .webform-submission-form {
+  .js-form-item {
+    max-width: 100%;
+  }
   .js-form-item.form-item label {
     display: block;
   }

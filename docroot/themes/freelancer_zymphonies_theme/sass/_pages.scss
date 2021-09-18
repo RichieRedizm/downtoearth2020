@@ -407,6 +407,7 @@
   .field--name-field-itinerary-footnote {
     background: $linkColorHover;
     color: $bodyBGColor;
+    @include border-radius($radiusLarge $radiusLarge);
   }
   .field--name-field-itinerary-footnote,
   .field.field--name-field-itinerary {
@@ -556,6 +557,9 @@
 
 .path-taxonomy,
 .node--type-mini-tour {
+  header {
+    width: 100%;
+  }
   .views-element-container > div {
     display: flex;
     flex-wrap: wrap;

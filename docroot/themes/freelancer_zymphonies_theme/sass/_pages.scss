@@ -404,6 +404,10 @@
   .field--name-body {
     @extend %large-body;
   }
+  .form-item--error-message {
+    font-size: 0.8em;
+    color: $alertFontColor;
+  }
   .field--name-field-itinerary-footnote {
     background: $linkColorHover;
     color: $bodyBGColor;

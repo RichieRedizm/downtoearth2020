@@ -86,6 +86,16 @@
   }
 }
 //  webform styles
+.captcha {
+  clear: both;
+  .details-description {
+    font-size: 0.7em;
+    width: 80%;
+    @media (min-width: 1200px) {
+      width: 60%;
+    }
+  }
+}
 .webform-submission-form {
   .js-form-item {
     max-width: 100%;

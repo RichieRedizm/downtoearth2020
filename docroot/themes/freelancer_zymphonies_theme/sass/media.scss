@@ -123,6 +123,10 @@
   .js-form-item-end-date input {
     min-width: 180px;
   }
+  input,
+  textarea {
+    max-width: 90%;
+  }
 }
 
 @media (min-width: 767px) {

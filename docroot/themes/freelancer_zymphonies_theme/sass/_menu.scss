@@ -176,3 +176,9 @@ nav h2 {
     }
   }
 }
+
+.toolbar .toolbar-bar,
+.toolbar .toolbar-tray {
+  position: fixed;
+  width: 100%;
+}

@@ -387,7 +387,9 @@
       font-size: 1.3em;
     }
   }
-
+  .field--name-field-trip-length- {
+    position: absolute;
+  }
   .field--type-text-long,
   .field.field--name-body,
   .field--name-field-image-content,
@@ -401,6 +403,10 @@
   .field--name-description,
   .field--name-body {
     @extend %large-body;
+  }
+  .field--name-field-itinerary-footnote {
+    background: $linkColorHover;
+    color: $bodyBGColor;
   }
   .field--name-field-itinerary-footnote,
   .field.field--name-field-itinerary {

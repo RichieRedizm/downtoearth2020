@@ -15,26 +15,12 @@ use Drupal\file\Entity\File;
 use Drupal\Core\Url;
 use Drupal\file\Plugin\Core\Entity\FileInterface;
 
-// function freelancer_zymphonies_theme_preprocess_field(&$variables) {
-//   $element = $variables['element'];
-  // print '<PRE>';
-  // var_dump($element);
-  // print '</PRE>';
-  // $terms = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->loadTree('tour_icons');
-  // $node = $variables['elements']['#node'];
-  // print '<PRE>';
-  // var_dump($terms);
-  // print '</PRE>';
-  // $field_symbol = $node->get('field_symbol')->getValue();
-
-  // kint($field_symbol);
-
-// }
 /**
  * Implements hook_preprocess_page() for block templates.
  */
 
 function freelancer_zymphonies_theme_preprocess_page(&$variables) {
+
   // Add responsive class
   if (!empty($variables['page']['topwidget_first']) && !empty($variables['page']['topwidget_second']) && !empty($variables['page']['topwidget_third'])) {
     $variables['topwidget_class'] = 'col-sm-4';
@@ -141,7 +127,8 @@ function freelancer_zymphonies_theme_preprocess_page(&$variables) {
 
   //To get the current URL
   $current_url  = \Drupal::request()->getRequestUri();
-  $current_path = explode("/", $current_url);
+  // $current_path = explode("/", $current_url);
+  $current_path = parse_url($current_url);
   $variables['current_path'] = $current_path[2];
   
   // Slider
@@ -182,7 +169,7 @@ function freelancer_zymphonies_theme_get_slider_content() {
   for ($i = 1; $i <= 1; $i++) {
     $fid = theme_get_setting('slide_image_path'.$i,'freelancer_zymphonies_theme');
     if (!empty($fid)) {
-      $file = file_load($fid[0]);
+      $file = File::load($fid[0]);
       $uri = $file->getFileUri();
       $path = file_create_url($uri);
     }
@@ -204,7 +191,7 @@ function freelancer_zymphonies_theme_get_slider_content() {
 /**
  * Implements hook_form_system_theme_settings_alter().
  */
-function freelancer_zymphonies_theme_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state) {
+function freelancer_zymphonies_theme_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
 
   $form['freelancer_zymphonies_theme_info'] = array(
     '#markup' => '<h2><br/>Advanced Theme Settings</h2><div class="messages messages--warning">Clear cache after making any changes in theme settings. <a href="../../config/development/performance">Click here to clear cache</a></div>'

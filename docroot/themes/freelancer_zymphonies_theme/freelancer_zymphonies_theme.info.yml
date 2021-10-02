@@ -2,7 +2,9 @@ name: Freelancer Zymphonies Theme
 type: theme
 description: 'Designed & Developed by <a href=https://www.zymphonies.com>Zymphonies</a><br/>Contact us for any kind of Drupal services <a href=mailto:info@zymphonies.com>info@zymphonies.com</a>'
 package: core
+base theme: false
 core: 8.x
+core_version_requirement: ^8 || ^9
 
 # Libraries
 libraries:
@@ -83,7 +85,7 @@ regions:
   auto_hidden_block: 'Auto hidden blocks'
 
 
-# Information added by Drupal.org packaging script on 2019-10-11
-version: '8.x-1.1'
+# Information added by Drupal.org packaging script on 2020-11-25
+version: '2.0.2'
 project: 'freelancer_zymphonies_theme'
-datestamp: 1570803506
+datestamp: 1606282323

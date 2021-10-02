@@ -2,7 +2,6 @@ name: 'Media Library test'
 type: module
 description: 'Test module for Media Library.'
 package: Testing
-core: 8.x
 dependencies:
   - drupal:image
   - drupal:media_library
@@ -12,6 +11,6 @@ dependencies:
   - drupal:path
 
 # Information added by Drupal.org packaging script on 2021-09-15
-version: '8.9.19'
+version: '9.2.6'
 project: 'drupal'
-datestamp: 1631722505
+datestamp: 1631721621

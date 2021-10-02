@@ -1,7 +1,6 @@
 name: "Entity Reference Test"
 type: module
 description: "Support module for the Entity Reference tests."
-core: 8.x
 package: Testing
 # version: VERSION
 dependencies:
@@ -11,6 +10,6 @@ dependencies:
   - drupal:entity_test
 
 # Information added by Drupal.org packaging script on 2021-09-15
-version: '8.9.19'
+version: '9.2.6'
 project: 'drupal'
-datestamp: 1631722505
+datestamp: 1631721621

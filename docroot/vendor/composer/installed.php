@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'a7a0a007cd3ad514ed0b8426e92e11e538815d15',
+        'reference' => '2b5e170db1374f70875b05be80d22038610254e0',
         'name' => 'drupal/legacy-project',
         'dev' => true,
     ),
@@ -529,7 +529,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'a7a0a007cd3ad514ed0b8426e92e11e538815d15',
+            'reference' => '2b5e170db1374f70875b05be80d22038610254e0',
             'dev_requirement' => false,
         ),
         'drupal/link' => array(
@@ -824,6 +824,15 @@
             'install_path' => __DIR__ . '/../guzzlehttp/psr7',
             'aliases' => array(),
             'reference' => 'dc960a912984efb74d0a90222870c72c87f10c91',
+            'dev_requirement' => false,
+        ),
+        'kint-php/kint' => array(
+            'pretty_version' => '3.3',
+            'version' => '3.3.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../kint-php/kint',
+            'aliases' => array(),
+            'reference' => '335ac1bcaf04d87df70d8aa51e8887ba2c6d203b',
             'dev_requirement' => false,
         ),
         'laminas/laminas-diactoros' => array(

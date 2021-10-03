@@ -1,68 +1,199 @@
-
 @import "compass/CSS3";
 @import "variables-and-mixins";
 
-@media (min-width: 576px){
-  .container {
-    max-width: 570px;
+//  node tour content styling
+.node__content {
+  .field--name-field-difficulty {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    .field__label {
+      display: none;
+    }
+  }
+  // .field__label {
+  //   text-indent: -100%;
+  //   padding: 0 5px;
+  //   color: black;
+  // }
+  .field--difficulty--wrapper {
+    .value__1 {
+      width: 100%;
+      background-image: linear-gradient(to left, rgb(255, 255, 0), green);
+      @include border-radius($radiusSmall);
+    }
+
+    .value__2 {
+      width: 100%;
+      background-image: linear-gradient(to left, #f0b906, #b3ff00, green);
+      @include border-radius($radiusSmall);
+    }
+
+    .value__3 {
+      width: 100%;
+      background-image: linear-gradient(
+        to left,
+        #f06d06,
+        #f0b906,
+        #b3ff00,
+        green
+      );
+      @include border-radius($radiusSmall);
+    }
+
+    .value__4 {
+      width: 100%;
+      background-image: linear-gradient(
+        to left,
+        #eb3802,
+        #f06d06,
+        #f0b906,
+        #b3ff00,
+        green
+      );
+      @include border-radius($radiusSmall);
+    }
+
+    .value__5 {
+      width: 100%;
+      background-image: linear-gradient(
+        to left,
+        #b30000,
+        #eb3802,
+        #f06d06,
+        #f0b906,
+        #b3ff00,
+        green
+      );
+      @include border-radius($radiusSmall);
+    }
+  }
+  .field--name-field-symbol {
+    .vocabulary-tour-icons {
+      // hide until we have more content for activity lists
+      h2 {
+        display: none;
+      }
+    }
+    .field__item {
+      margin-left: 4px;
+
+      .field--name-name {
+        text-align: center;
+        font-size: 0.7em;
+      }
+    }
+  }
+}
+//  webform styles
+.captcha {
+  clear: both;
+  .details-description {
+    font-size: 0.7em;
+    width: 80%;
+    @media (min-width: 1200px) {
+      width: 60%;
+    }
+  }
+}
+.webform-submission-form {
+  .js-form-item {
+    max-width: 100%;
+  }
+  .js-form-item.form-item label {
+    display: block;
+  }
+
+  #edit-intro-content {
+    background: $linkColorHoverLight;
+    color: white;
+    font-size: 1.2em;
+    padding: 20px;
+    margin: 2em 0;
+    @include border-radius($radiusLarge);
+  }
+  .form-required::after {
+    content: "";
+    display: inline-block;
+    background-image: url(/core/misc/icons/ee0000/required.svg);
+    background-repeat: no-repeat;
+    background-size: 6px 6px;
+    width: 6px;
+    height: 10px;
+    margin: 0 0.3em;
+  }
+
+  #edit-start-date,
+  #edit-end-date,
+  #edit-additional-information,
+  #edit-phone,
+  #edit-email,
+  #edit-name-first,
+  #edit-name-last,
+  #edit-captcha-response {
+    background-color: white !important;
+  }
+  .js-form-item-start-date input,
+  .js-form-item-end-date input {
+    min-width: 180px;
+  }
+  input,
+  textarea {
+    max-width: 90%;
+    @media (min-width: 980px) {
+      max-width: 100%;
+    }
   }
 }
 
 @media (min-width: 767px) {
-
-  .top-nav{
+  .top-nav {
     text-align: left;
-    
-    .top-menu{
+
+    .top-menu {
       float: right;
     }
   }
 
-  .container {
-    max-width: 1140px;
-  }
-
-  .navbar-toggle{
+  .navbar-toggle {
     display: none;
   }
 
-  .user-logged-in .main-header{
+  .user-logged-in .main-header {
     position: relative;
   }
 
   // Flexslider
   .flexslider {
-
-    .slider-caption{
+    .slider-caption {
       display: block;
       top: 30%;
       left: 5%;
-      width: 40%;
+      width: 60%;
       font-size: 1.2em;
     }
 
-    .slider-title{
+    .slider-title {
       font-size: 2em;
     }
 
-    .flex-direction-nav{
+    .flex-direction-nav {
       display: block;
       margin-top: -24px;
     }
-
   }
 
-  .region-search{
+  .region-search {
     float: right;
     width: 200px;
     padding: 16px 0;
   }
 
-  .navbar-toggle-close{
+  .navbar-toggle-close {
     display: none;
   }
 
-  .region-primary-menu{
+  .region-primary-menu {
     display: inline-block !important;
     width: auto;
     margin: 0;
@@ -71,15 +202,15 @@
     vertical-align: middle;
     position: static;
 
-    ul{
+    ul {
       border: 0;
       float: right;
 
-      ul{
+      ul {
         background: #fff;
         background: $desktopMenuDropDownBG;
 
-        li a{
+        li a {
           color: #fff;
           padding: 18px 15px;
         }
@@ -87,21 +218,21 @@
         li a:hover,
         li a:focus,
         li a:active,
-        li a.highlighted{
+        li a.highlighted {
           color: $desktopMenuDropDownHover;
           padding: 18px 15px;
         }
 
-        li{
+        li {
           border-bottom: 1px solid rgba(255, 255, 255, 0.13);
         }
-      }      
+      }
     }
 
-    li{
+    li {
       border: 0;
 
-      a{
+      a {
         background: none;
         border: 0;
         font-weight: 400;
@@ -120,32 +251,31 @@
           border-width: 4px;
           border-style: solid;
           border-color: #fff transparent transparent transparent;
-          font-size: 2em;
+          font-size: 1.2em;
           line-height: 100%;
         }
       }
 
-      li{
+      li {
         span.sub-arrow {
           top: 22px;
           border-color: #0000 #0000 #0000 #fff;
           right: 5px;
         }
       }
-
     }
   }
 
   .carousel-caption p,
-  .carousel-caption h3{
+  .carousel-caption h3 {
     display: block;
   }
 
-  .carousel-caption p:last-child{
+  .carousel-caption p:last-child {
     margin: 0;
   }
 
-  .carousel-caption{
+  .carousel-caption {
     background-color: #fff;
     background: rgba(0, 0, 0, 0.84);
     color: #ddd;
@@ -158,35 +288,36 @@
     text-align: left;
   }
 
-  .comment-wrap{
+  .comment-wrap {
+    .author-details {
+      width: 10%;
+    }
 
-    .author-details{ width: 10%; }
-
-    .author-comments{ width: 90%; }
-
+    .author-comments {
+      width: 90%;
+    }
   }
 
-  .social-media{
+  .social-media {
     padding: 0px 0;
     text-align: right;
   }
 
-  .contact-message-feedback-form{
+  .contact-message-feedback-form {
     .form-type-textfield,
-    .form-type-email{
+    .form-type-email {
       float: left;
       width: 33.3%;
       padding-right: 10px;
-      
+
       input,
-      textarea{
+      textarea {
         padding: 10px;
       }
     }
-    
-    .form-type-textfield:last-child{
+
+    .form-type-textfield:last-child {
       padding: 0;
     }
   }
-
 }

@@ -102,9 +102,8 @@
 <!-- Start: Header -->
 <div class="header">
   <div class="container-">
-    <div class="row">
 
-      <div class="navbar-header col-md-3">
+      <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navigation">
           <i class="fas fa-bars"></i>
         </button>
@@ -114,7 +113,7 @@
       </div>
 
       {% if page.primary_menu or page.search %}
-        <div class="col-md-9">
+        <div class="navbar-header-primary-menu">
           {% if page.search %}
             {{ page.search }}
           {% endif %}
@@ -124,7 +123,6 @@
         </div>
       {% endif %}
 
-    </div>
   </div>
 </div>
 <!-- End: Region -->
@@ -133,12 +131,25 @@
 <!-- Start: Slides -->
 {% if is_front and show_slideshow %}
   <div class="container-">
+  {% set responsiveimagestyle = {
+    '#theme': 'responsive_image',
+    '#responsive_image_style_id': 'homepage',
+    '#uri': 'public://homepage-petra.jpg',
+    '#alt': 'Petra',
+    '#attributes': { class: 'img-responsive' },
+} %}
     <div class="flexslider">
-      <ul class="slides">
-        {% for slider_contents in slider_content %}
-          {{ slider_contents | raw }}
-        {% endfor %}
-      </ul>
+      <div class='image-overlay'>
+        &nbsp;
+      </div>
+      {{ responsiveimagestyle }}
+      <div class="slider-caption">
+        <h2 class="slider-title">Down To Earth Travel</h2>
+        <div class="clearfix"><p class="slider-description">We are two female tour leaders who started our careers in the Middle East and consequently had our eyes opened by this troubled and misrepresented but fascinating region, its culture, way of life, the food and the feeling of coming home.
+We would love to share this with you.</p></div>
+        <a href="/about-us/downtoearthtravel" class="more-link">Read more</a>
+      </div>
+ 
     </div>
   </div>
 {% endif %}
@@ -463,6 +474,8 @@
 <!-- Start: Copyright -->
 <div class="copyright">
   <div class="container">
+    <a href="https://www.protectedtrustservices.com/services/consumer-protection/" target='_blank' title="Protected Trust Services"><img alt="Protected Trust Services" data-align="center" data-entity-type="file" data-entity-uuid="168bf260-e90e-4dde-a4d7-b107b0434448" src="/sites/default/files/inline-images/protected-trust-services.png" width="150" /></a>
+    <div class='fotter-contact'>Down To Earth Travel - Contact UK: +44 7748 118086 / Jordan: +962 7979 32595M</div>
     <span>Copyright © {{ "now"|date("Y") }}. All rights reserved.</span>
     {% if show_credit_link %}
       <span class="credit-link">Designed By <a href="https://www.zymphonies.com" target="_blank">Zymphonies</a></span>

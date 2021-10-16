@@ -624,6 +624,11 @@
     ul {
       padding-bottom: 1%;
     }
+    .field.field--name-title {
+      max-width: 82%;
+      max-height: 40px;
+      display: block;
+    }
     .flag-mini-breaks-flags a {
       margin-bottom: 3%;
       float: right;
@@ -664,12 +669,13 @@
       }
     }
     .field--name-field-trip-length- {
+      top: 22px;
       right: 2%;
       font-size: 1.3em;
       line-height: 120%;
       font-weight: 500;
       position: absolute;
-      // top: 1em;
+      color: $buttonBackGround;
     }
   }
 }
